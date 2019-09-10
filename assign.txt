@@ -1,0 +1,49 @@
+1) Create a multi-level inheritance , instantiate the child class and observe constructor invocation.Also show, if needed how will u invoke parent class constructor from child class ?
+
+package andya;
+
+class child2 extends child1 
+{
+child2()
+{
+super(20);
+	System.out.println("in child2");
+}
+}
+
+class base 
+{
+	private int a;
+base()
+{
+	System.out.println("in base");
+}
+base(int a)
+{
+	
+	System.out.println(a);
+}
+}
+ 
+class child1 extends base  
+ {
+	 private int b;
+child1()
+{
+	super(30);
+	System.out.println("in child1");
+}
+child1(int b)
+{
+	super(30);
+	System.out.println(b);
+}
+}
+ class child2 extends child1 
+{
+child2()
+{
+super(20);
+	System.out.println("in child2");
+}
+}
